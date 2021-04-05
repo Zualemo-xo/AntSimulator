@@ -2,7 +2,6 @@
 #include <list>
 #include <vector>
 #include <SFML/System.hpp>
-#include <swarm.hpp>
 
 #include "marker.hpp"
 #include "food.hpp"
@@ -21,7 +20,6 @@ struct World
 		, grid_food(width, height, 5)
 		, size(width, height)
 		, va(sf::Quads)
-		, swarm(Conf<>::THREAD_COUNT)
 	{
 		va.resize(4 * grid_markers_home.cells.size());
 
@@ -115,7 +113,6 @@ struct World
 	FlatGrid grid_markers_home;
 	FlatGrid grid_markers_food;
 	Grid<Food> grid_food;
-	swrm::Swarm swarm;
 
 	uint64_t markers_count;
 };

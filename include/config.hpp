@@ -13,8 +13,8 @@ struct Conf
 	inline const static sf::Color COLONY_COLOR = sf::Color(67, 46, 163);
 	inline const static uint8_t THREAD_COUNT = 1;
 	
-	inline const static uint32_t WIN_WIDTH = 1600;
-	inline const static uint32_t WIN_HEIGHT = 900;
+	inline const static uint32_t WIN_WIDTH = 1920;
+	inline const static uint32_t WIN_HEIGHT = 1080;
 
 	inline const static float MAX_CELL_INTENSITY = 100.0f;
 	inline const static float COLONY_SIZE = 20.0f;
