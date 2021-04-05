@@ -2,7 +2,7 @@
 FROM gitpod/workspace-full
 USER gitpod
 RUN sudo apt-get update -q && \
-    sudo apt-get install -yq redis-server
+    sudo apt-get install libsfml-dev
 # Install custom tools, runtime, etc. using apt-get
 # For example, the command below would install "bastet" - a command line tetris clone:
 #
